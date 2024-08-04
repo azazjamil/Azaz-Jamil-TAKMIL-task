@@ -11,9 +11,9 @@ import { AddressModule } from './address/address.module';
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
-      port: 4000,
+      port: 4000, // make sure to put your pg port
       username: 'postgres',
-      password: 'VTXuDx12',
+      password: '', //password of your pg database
       database: 'schooldb',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
